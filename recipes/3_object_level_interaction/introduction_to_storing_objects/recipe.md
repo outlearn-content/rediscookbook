@@ -1,10 +1,22 @@
+<!--
+name: introduction-to-storing-objects
+version : "0.9"
+title : "Introduction to Storing Objects"
+description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
+homepage : "http://www.rediscookbook.org"
+author : "Michel Martens"
+license : "CC Attribution Share Alike 3.0"
+-->
+
+<!-- @section -->
+
 ### Problem
 
 You want to store some arbitrary objects in Redis.
 
 ### Solution
 
-As with any key-value database, you can use the key to simulate structure. Here's an example using 
+As with any key-value database, you can use the key to simulate structure. Here's an example using
 Ruby, but the principle can be used in any programming language.
 
     >> redis.set "event:42:name", "Redis Meetup"
@@ -59,4 +71,4 @@ There are some libraries that help you automate the creation of keys based on ob
 ### See Also
 
 Check out **Using a Ruby Library to Store Objects** to see options in Ruby, and strategies used by
-various libraries. 
+various libraries.

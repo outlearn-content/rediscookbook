@@ -1,3 +1,15 @@
+<!--
+name: implement-a-fifo-queue
+version : "0.9"
+title : "Implement a FIFO Queue"
+description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
+homepage : "http://www.rediscookbook.org"
+author : "Ted Nyman"
+license : "CC Attribution Share Alike 3.0"
+-->
+
+<!-- @section -->
+
 ### Problem
 
 You want to use Redis to implement a simple abstract first-in, first-out
@@ -6,8 +18,8 @@ queue, with basic push and pop operations.
 ### Solution
 
 Redis' built-in `List` datatype is a natural-born queue. To effectively
-implement a simple queue, all you need to do is utilize a limited set 
-of `List` operations. 
+implement a simple queue, all you need to do is utilize a limited set
+of `List` operations.
 
 	redis> LPUSH queue1 tom
 	(integer) 1
@@ -25,16 +37,16 @@ of `List` operations.
 
 ### Discussion
 
-Redis comes with four basic list push and pop operations (RPUSH, LPUSH, 
-LPOP, RPOP), as well as *blocking pop* operations. They are all O(1) 
+Redis comes with four basic list push and pop operations (RPUSH, LPUSH,
+LPOP, RPOP), as well as *blocking pop* operations. They are all O(1)
 operations, so the time complexity of the commands does not depend upon
- the length of the list. 
+ the length of the list.
 
 Implementing a simple queue atop the Redis commands is straight-forward
-and is a good introduction to building thin Redis-powered abstractions. 
+and is a good introduction to building thin Redis-powered abstractions.
 
-For example,  here's a Python queue that provides object-level 
-interaction (and uses INCR to ensure a unique ID for each new queue): 
+For example,  here's a Python queue that provides object-level
+interaction (and uses INCR to ensure a unique ID for each new queue):
 
     r = redis.Redis()
 
@@ -44,16 +56,16 @@ interaction (and uses INCR to ensure a unique ID for each new queue):
             local_id = r.incr("queue_space")
             id_name = "queue:%s" %(local_id)
             self.id_name = id_name
- 
+
     def push(self, element):
-        """Push an element to the tail of the queue""" 
+        """Push an element to the tail of the queue"""
             id_name = self.id_name
             push_element = redis.lpush(id_name, element)
- 
+
     def pop(self):
         """Pop an element from the head of the queue"""
             id_name = self.id_name
             popped_element = redis.rpop(id_name)
             return popped_element
- 
+
 ### See Also

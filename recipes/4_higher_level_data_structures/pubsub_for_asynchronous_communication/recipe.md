@@ -1,3 +1,15 @@
+<!--
+name: pubsub-for-asynchronous-communication
+version : "0.9"
+title : "Using Pub/Sub for Asynchronous Communication"
+description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
+homepage : "http://www.rediscookbook.org"
+author : "Pieter Noordhuis"
+license : "CC Attribution Share Alike 3.0"
+-->
+
+<!-- @section -->
+
 ### Problem
 
 You want Redis to serve as the backend for an application that needs chat
@@ -92,7 +104,7 @@ easily identified.
 
 ### See Also
 
-Check out **Atomically Pipeline Multiple Commands** to see how the order of 
+Check out **Atomically Pipeline Multiple Commands** to see how the order of
 messages is preserved in persisting them by using `MULTI`/`EXEC`.
 
 For a working example on publish/subscribe in Redis, see

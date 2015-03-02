@@ -1,0 +1,32 @@
+{
+  "olpVersion" : "0.1",
+  "name" : "ruby-library-store-objects",
+  "version" : "0.9.0",
+  "title" : "Using a Ruby Library to Store Objects",
+  "description": "Part of the Redis Cookbook, http://www.rediscookbook.org",
+  "homepage" : "http://www.rediscookbook.org/",
+  "authors" : ["Ted Nyman","Tim Lossen"],
+  "license" : "CC Attribution Share Alike 3.0",
+  "contact" : {
+    "url" : "https://github.com/rediscookbook/rediscookbook",
+    "twitter": "rediscookbook"
+  },
+  "sections" : [
+    {
+      "title": "Using a Ruby Library to Store Objects",
+      "location": "recipe.md"
+    }
+  ],
+  "assets" : [
+    {
+      "ref" : "ruby-ohm-code",
+      "contentType" : "code/ruby",
+      "location" : "./ohm.rb"
+    },
+    {
+      "ref" : "ruby-remodel-code",
+      "contentType" : "code/ruby",
+      "location" : "./remodel.rb"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # The Redis Cookbook
 
+[![Outlearn Status](https://img.shields.io/badge/learn-ready-brightgreen.svg)](#)
+
 ### Help grow the Redis community with your knowledge!
 
 Contribute your patterns, methods, and ideas to the Redis Cookbook.
@@ -17,10 +19,10 @@ Contribute your patterns, methods, and ideas to the Redis Cookbook.
 
 You can:
 
-* Add example code for any existing recipe, in any programming language. 
+* Add example code for any existing recipe, in any programming language.
   Fork the repo and add your code into the relevant directory!
 * Work on the rediscookbook.org website. The site itself is open source and lives in `site`.
-* Look for typos, formatting errors, missing links, and other little things. 
+* Look for typos, formatting errors, missing links, and other little things.
   No potential improvement is 'too small' -- fork for anything.
 
 ### Your hosts

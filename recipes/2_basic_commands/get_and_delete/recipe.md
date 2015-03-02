@@ -1,3 +1,15 @@
+<!--
+name: install-with-installer
+version : "0.9"
+title : "Atomic Get and Delete"
+description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
+homepage : "http://www.rediscookbook.org"
+author : "Gleicon Moraes, Dov Murik, Matti Paksula"
+license : "CC Attribution Share Alike 3.0"
+-->
+
+<!-- @section -->
+
 ### Problem
 
 You want to atomically GET and then DELETE an object from Redis.
@@ -21,18 +33,18 @@ because the key was already renamed. GET and DEL benefit from the RENAME
 function in order to keep other clients from reading the object data between
 operations.
 
-However, there is an potential problem lurking here. If the execution is 
-interrupted on line 2  (if success) or line 3 (value = GET key:tmp), then 
+However, there is an potential problem lurking here. If the execution is
+interrupted on line 2  (if success) or line 3 (value = GET key:tmp), then
 that key stays renamed as `key:tmp` for good in the database.
 
-Using Redis' MULTI-EXEC function provides a solution. 
+Using Redis' MULTI-EXEC function provides a solution.
 
 First, in pseudocode:
 
 	MULTI
 	value = GET key
 	DELETE key
-	EXEC	
+	EXEC
 	return value
 
 And using `redis-cli`:
@@ -56,7 +68,7 @@ And using `redis-cli`:
 
 ### Discussion
 
-	
+
 ### See Also
 
 **Atomically Pipeline Multiple Commands** for more information about MULTI/EXEC.

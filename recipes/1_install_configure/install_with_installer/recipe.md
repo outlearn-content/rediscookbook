@@ -1,3 +1,15 @@
+<!--
+name: install-with-installer
+version : "0.9"
+title : "Easily Install Redis in Multiple Environments"
+description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
+homepage : "http://www.rediscookbook.org"
+author : "Wayne E. Seguin"
+license : "CC Attribution Share Alike 3.0"
+-->
+
+<!-- @section -->
+
 ### Problem
 
 You want to be able to:

@@ -1,3 +1,15 @@
+<!--
+name: implement-a-social-graph
+version : "0.9"
+title : "Implement a Social Graph"
+description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
+homepage : "http://www.rediscookbook.org"
+author : "Michael Bleigh"
+license : "CC Attribution Share Alike 3.0"
+-->
+
+<!-- @section -->
+
 ### Problem
 
 You want to use Redis to implement a social graph for users in
@@ -24,7 +36,7 @@ raw redis it looks something like this:
     (integer) 1
     redis> SINTER user:1:follows user:1:followers
     1. 3
-    
+
 ### Discussion
 
 Redis comes with the ability to construct "sets", which are

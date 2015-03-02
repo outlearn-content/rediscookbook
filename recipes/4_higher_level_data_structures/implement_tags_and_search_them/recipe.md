@@ -1,11 +1,23 @@
+<!--
+name: implement-tags-and-search-them
+version : "0.9"
+title : "Create Tags for an Object and Search for Them"
+description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
+homepage : "http://www.rediscookbook.org"
+author : "Gleicon Moraes"
+license : "CC Attribution Share Alike 3.0"
+-->
+
+<!-- @section -->
+
 ### Problem
 You want tags for your objects, and want to be able to search them.
 
 ### Solution
-In this case, using books as an example, create one SET for each tag, and 
-associate the given ids to the correct sets. Selecting a combination 
+In this case, using books as an example, create one SET for each tag, and
+associate the given ids to the correct sets. Selecting a combination
 between tags is simple as using SINTER, SUNION and SDIFF. The same principle
-can be used for document storage, taking care to use words or its stems 
+can be used for document storage, taking care to use words or its stems
 as 'tags'
 
 In redis-cli:
@@ -43,17 +55,17 @@ Now, the searching/selecting part:
 
 SETs and ZSETs operations are building blocks for basic and advanced
 combinations which yields more results per search.
- 
-* In (a), there is no book tagged erlang AND haskell. 
-* In (b) is the same as searching for ALL BOOKS tagged programming and 
+
+* In (a), there is no book tagged erlang AND haskell.
+* In (b) is the same as searching for ALL BOOKS tagged programming and
 computing
 * BOOKS that are tagged either erlang or haskell are found on (c)
 * (d) excludes all books tagged haskell from the programming group.
 
-For a document based storage and search, check meta code at 
-<http://github.com/gleicon/docdb>. It may look overkill, but after some 
+For a document based storage and search, check meta code at
+<http://github.com/gleicon/docdb>. It may look overkill, but after some
 documents, the number of sets doesnt grow that much.
-  
+
 ### See Also
 
 * <http://www.slideshare.net/gleicon/redis-3025589>

@@ -1,3 +1,15 @@
+<!--
+name: multiple-databases
+version : "0.9"
+title : "Working with Multiple Databases"
+description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
+homepage : "http://www.rediscookbook.org"
+author : "Tim Lossen"
+license : "CC Attribution Share Alike 3.0"
+-->
+
+<!-- @section -->
+
 ### Problem
 
 You want to keep different kinds of data &mdash; belonging to different
@@ -14,13 +26,13 @@ With the `SELECT` command you can switch to a different database:
 
 	redis> select 3
 	OK
-	
+
 All subsequent commands will then use database 3, until you issue another `SELECT`.
 
 
 ### Discussion
 
-Each Redis database has its own keyspace. 
+Each Redis database has its own keyspace.
 By using different databases for your 'staging' and 'production' data,
 for example, you don't have to worry about key clashes between the two.
 

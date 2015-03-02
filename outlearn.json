@@ -1,0 +1,81 @@
+{
+  "olpVersion" : "0.1",
+  "name" : "redis-cookbook",
+  "version" : "0.9.0",
+  "title" : "The Redis Cookbook",
+  "description": "A collection of Redis how-to's, built by the Redis community.",
+  "homepage" : "http://www.rediscookbook.org/",
+  "authors" : ["Ted Nyman","Tim Lossen"],
+  "license" : "CC Attribution Share Alike 3.0",
+  "contact" : {
+    "url" : "https://github.com/rediscookbook/rediscookbook",
+    "twitter": "rediscookbook"
+  },
+  "sections" : [
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/1_install_configure/install_with_installer/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/1_install_configure/install_with_make/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/2_basic_commands/create_unique_ids/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/2_basic_commands/get_and_delete/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/2_basic_commands/multiple_databases/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/2_basic_commands/pipeline_multiple_commands/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/2_basic_commands/pipeline_multiple_commands/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/2_basic_commands/pipeline_multiple_commands/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/4_higher_level_data_structures/implement_a_fifo_queue/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/4_higher_level_data_structures/implement_a_social_graph/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/4_higher_level_data_structures/implement_tags_and_search_them/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/4_higher_level_data_structures/pubsub_for_asynchronous_communication/recipe.md"
+    },
+    {
+      "type": "module",
+      "contentType" : "outlearn/olm",
+      "location": "recipes/5_durability_and_consistency/make_data_more_durable/recipe.md"
+    }
+  ]
+}
