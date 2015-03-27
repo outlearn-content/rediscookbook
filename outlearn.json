@@ -5,7 +5,7 @@
   "title" : "The Redis Cookbook",
   "description": "A collection of Redis how-to's, built by the Redis community.",
   "homepage" : "http://www.rediscookbook.org/",
-  "authors" : ["Ted Nyman","Tim Lossen"],
+  "authors" : [ "Ted Nyman", "Tim Lossen" ],
   "license" : "CC Attribution Share Alike 3.0",
   "contact" : {
     "url" : "https://github.com/rediscookbook/rediscookbook",

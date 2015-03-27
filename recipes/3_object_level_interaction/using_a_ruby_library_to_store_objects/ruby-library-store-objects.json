@@ -5,7 +5,7 @@
   "title" : "Using a Ruby Library to Store Objects",
   "description": "Part of the Redis Cookbook, http://www.rediscookbook.org",
   "homepage" : "http://www.rediscookbook.org/",
-  "authors" : ["Ted Nyman","Tim Lossen"],
+  "authors" : [ "Ted Nyman", "Tim Lossen" ],
   "license" : "CC Attribution Share Alike 3.0",
   "contact" : {
     "url" : "https://github.com/rediscookbook/rediscookbook",
@@ -19,12 +19,12 @@
   ],
   "assets" : [
     {
-      "ref" : "ruby-ohm-code",
+      "name" : "ruby-ohm-code",
       "contentType" : "code/ruby",
       "location" : "./ohm.rb"
     },
     {
-      "ref" : "ruby-remodel-code",
+      "name" : "ruby-remodel-code",
       "contentType" : "code/ruby",
       "location" : "./remodel.rb"
     }
