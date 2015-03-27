@@ -14,7 +14,7 @@ and instead use a very simple domain-specific language to achieve similar result
 Consider the following example in Ohm. Here, we'll model three arbitrary objects (an Event, a
 Venue, and a Person), and provide validations for the Event.
 
-<!-- @asset, name: 'ruby-ohm-code' -->
+<!-- @asset, "name" : "ruby-ohm-code" -->
 <!-- @no-outlearn -->
 {% code_snippet ohm.rb %}
 <!-- @yes-outlearn -->
@@ -22,7 +22,7 @@ Venue, and a Person), and provide validations for the Event.
 The Ruby libraries also employ a simple style to model associations. Here is an example of how to create a
 familiar 'has_many' relationship, using remodel.
 
-<!-- @asset, name: 'ruby-remodel-code' -->
+<!-- @asset, "name" : "ruby-remodel-code" -->
 
 <!-- @no-outlearn -->
 {% code_snippet remodel.rb %}
