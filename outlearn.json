@@ -1,81 +1,76 @@
 {
+  "_notes" : "With the move to new OLP, there are no nested modules, but there are paths.  This file used to define a module with many nested modules.  Now it defines a path with many modules.  In the transition, some of the metadata about the old top level module has lost (e.g. author, contact) in the transition, as paths do not support that kind of information.",
   "olpVersion" : "0.1",
-  "name" : "redis-cookbook",
-  "version" : "0.9.0",
-  "title" : "The Redis Cookbook",
-  "description": "A collection of Redis how-to's, built by the Redis community.",
-  "homepage" : "http://www.rediscookbook.org/",
-  "authors" : [ "Ted Nyman", "Tim Lossen" ],
-  "license" : "CC Attribution Share Alike 3.0",
-  "contact" : {
-    "url" : "https://github.com/rediscookbook/rediscookbook",
-    "twitter": "rediscookbook"
-  },
-  "sections" : [
+
+  "paths" : [
     {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/1_install_configure/install_with_installer/recipe.md"
+      "name" : "redis-cookbook",
+      "title" : "The Redis Cookbook",
+      "description": "A collection of Redis how-to's, built by the Redis community.",
+      "privacy" : "public",
+      "coverImage" : "http://bencane.com/img/thumbnails/redis.png",
+      "pages" : [
+        { "module": "install-with-installer" },
+        { "module": "install-with-make" },
+        { "module": "create-unique-ids" },
+        { "module": "get-and-delete" },
+        { "module": "multiple-databases" },
+        { "module": "pipeline-multiple-commands" },
+        { "module": "introduction-to-storing-objects" },
+        { "module": "ruby-library-store-objects" },
+        { "module": "implement-a-fifo-queue" },
+        { "module": "implement-a-social-graph" },
+        { "module": "implement-tags-and-search-them" },
+        { "module": "pubsub-for-asynchronous-communication" },
+        { "module": "make-data-more-durable" }
+      ]
+    }
+  ],
+
+  "modules" : [
+    { "olm": "recipes/1_install_configure/install_with_installer/recipe.md" },
+    { "olm": "recipes/1_install_configure/install_with_make/recipe.md" },
+    { "olm": "recipes/2_basic_commands/create_unique_ids/recipe.md" },
+    { "olm": "recipes/2_basic_commands/get_and_delete/recipe.md" },
+    { "olm": "recipes/2_basic_commands/multiple_databases/recipe.md" },
+    { "olm": "recipes/2_basic_commands/pipeline_multiple_commands/recipe.md" },
+    { "olm": "recipes/3_object_level_interaction/introduction_to_storing_objects/recipe.md" },
+    {
+      "name" : "ruby-library-store-objects",
+      "version" : "0.9.0",
+      "title" : "Using a Ruby Library to Store Objects",
+      "description": "Part of the Redis Cookbook, http://www.rediscookbook.org",
+      "homepage" : "http://www.rediscookbook.org/",
+      "authors" : [ "Ted Nyman", "Tim Lossen" ],
+      "license" : "CC Attribution Share Alike 3.0",
+      "contact" : {
+        "url" : "https://github.com/rediscookbook/rediscookbook",
+        "twitter": "rediscookbook"
+      },
+      "sections" : [
+        {
+          "title": "Using a Ruby Library to Store Objects",
+          "location": "recipes/3_object_level_interaction/using_a_ruby_library_to_store_objects/recipe.md"
+        }
+      ]
+    },
+    { "olm": "recipes/4_higher_level_data_structures/implement_a_fifo_queue/recipe.md" },
+    { "olm": "recipes/4_higher_level_data_structures/implement_a_social_graph/recipe.md" },
+    { "olm": "recipes/4_higher_level_data_structures/implement_tags_and_search_them/recipe.md" },
+    { "olm": "recipes/4_higher_level_data_structures/pubsub_for_asynchronous_communication/recipe.md" },
+    { "olm": "recipes/5_durability_and_consistency/make_data_more_durable/recipe.md" }
+  ],
+
+  "assets" : [
+    {
+      "name" : "ruby-ohm-code",
+      "contentType" : "code/ruby",
+      "location" : "recipes/3_object_level_interaction/using_a_ruby_library_to_store_objects/ohm.rb"
     },
     {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/1_install_configure/install_with_make/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/2_basic_commands/create_unique_ids/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/2_basic_commands/get_and_delete/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/2_basic_commands/multiple_databases/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/2_basic_commands/pipeline_multiple_commands/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/3_object_level_interaction/introduction_to_storing_objects/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olp",
-      "location": "recipes/3_object_level_interaction/using_a_ruby_library_to_store_objects/ruby-library-store-objects.json"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/4_higher_level_data_structures/implement_a_fifo_queue/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/4_higher_level_data_structures/implement_a_social_graph/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/4_higher_level_data_structures/implement_tags_and_search_them/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/4_higher_level_data_structures/pubsub_for_asynchronous_communication/recipe.md"
-    },
-    {
-      "type": "module",
-      "contentType" : "outlearn/olm",
-      "location": "recipes/5_durability_and_consistency/make_data_more_durable/recipe.md"
+      "name" : "ruby-remodel-code",
+      "contentType" : "code/ruby",
+      "location" : "recipes/3_object_level_interaction/using_a_ruby_library_to_store_objects/remodel.rb"
     }
   ]
 }

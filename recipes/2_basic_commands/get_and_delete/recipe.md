@@ -1,5 +1,5 @@
 <!--
-name: install-with-installer
+name: get-and-delete
 version : "0.9"
 title : "Atomic Get and Delete"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
@@ -72,4 +72,3 @@ And using `redis-cli`:
 ### See Also
 
 **Atomically Pipeline Multiple Commands** for more information about MULTI/EXEC.
-
