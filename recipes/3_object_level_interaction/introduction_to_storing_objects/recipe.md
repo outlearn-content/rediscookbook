@@ -1,5 +1,6 @@
 <!--
 name: introduction-to-storing-objects
+freshnessDate: 2013-01-12
 version : "0.9"
 title : "Introduction to Storing Objects"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"

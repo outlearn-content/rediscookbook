@@ -1,5 +1,6 @@
 <!--
 name: install-with-make
+freshnessDate: 2013-01-12
 version : "0.9"
 title : "Install Redis With Make"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"

@@ -1,5 +1,6 @@
 <!--
 name: install-with-installer
+freshnessDate: 2013-01-12
 version : "0.9"
 title : "Easily Install Redis in Multiple Environments"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"

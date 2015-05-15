@@ -41,6 +41,7 @@
       "title" : "Using a Ruby Library to Store Objects",
       "description": "Part of the Redis Cookbook, http://www.rediscookbook.org",
       "homepage" : "http://www.rediscookbook.org/",
+      "freshnessDate" : 2014-01-13,
       "authors" : [ "Ted Nyman", "Tim Lossen" ],
       "license" : "CC Attribution Share Alike 3.0",
       "contact" : {

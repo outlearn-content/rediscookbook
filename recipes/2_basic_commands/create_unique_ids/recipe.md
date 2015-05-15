@@ -1,5 +1,6 @@
 <!--
 name: create-unique-ids
+freshnessDate: 2013-01-12
 version : "0.9"
 title : "Create Unique IDs"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
