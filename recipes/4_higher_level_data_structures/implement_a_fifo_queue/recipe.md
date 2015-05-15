@@ -1,5 +1,6 @@
 <!--
 name: implement-a-fifo-queue
+freshnessDate: 2014-12-04
 version : "0.9"
 title : "Implement a FIFO Queue"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"

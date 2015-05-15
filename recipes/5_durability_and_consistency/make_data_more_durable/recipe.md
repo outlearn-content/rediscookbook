@@ -1,5 +1,6 @@
 <!--
 name: make-data-more-durable
+freshnessDate: 2014-12-04
 version : "0.9"
 title : "Make Data in Redis More Durable With The Append-Only File"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"

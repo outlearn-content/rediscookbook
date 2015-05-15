@@ -1,5 +1,6 @@
 <!--
 name: implement-a-social-graph
+freshnessDate: 2014-12-04
 version : "0.9"
 title : "Implement a Social Graph"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"

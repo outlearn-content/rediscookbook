@@ -1,5 +1,6 @@
 <!--
 name: pubsub-for-asynchronous-communication
+freshnessDate: 2014-12-04
 version : "0.9"
 title : "Using Pub/Sub for Asynchronous Communication"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"

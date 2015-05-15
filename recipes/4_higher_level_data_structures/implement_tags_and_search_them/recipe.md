@@ -1,5 +1,6 @@
 <!--
 name: implement-tags-and-search-them
+freshnessDate: 2014-12-04
 version : "0.9"
 title : "Create Tags for an Object and Search for Them"
 description: "Part of the Redis Cookbook, http://www.rediscookbook.org"
