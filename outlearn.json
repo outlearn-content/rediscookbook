@@ -50,7 +50,7 @@
       "sections" : [
         {
           "title": "Using a Ruby Library to Store Objects",
-          "location": "recipes/3_object_level_interaction/using_a_ruby_library_to_store_objects/recipe.md"
+          "content": "recipes/3_object_level_interaction/using_a_ruby_library_to_store_objects/recipe.md"
         }
       ]
     },
