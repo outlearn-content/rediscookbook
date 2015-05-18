@@ -10,19 +10,19 @@
       "privacy" : "public",
       "coverImage" : "http://bencane.com/img/thumbnails/redis.png",
       "pages" : [
-        { "module": "install-with-installer" },
-        { "module": "install-with-make" },
-        { "module": "create-unique-ids" },
-        { "module": "get-and-delete" },
-        { "module": "multiple-databases" },
-        { "module": "pipeline-multiple-commands" },
-        { "module": "introduction-to-storing-objects" },
-        { "module": "ruby-library-store-objects" },
-        { "module": "implement-a-fifo-queue" },
-        { "module": "implement-a-social-graph" },
-        { "module": "implement-tags-and-search-them" },
-        { "module": "pubsub-for-asynchronous-communication" },
-        { "module": "make-data-more-durable" }
+        { "module": "outlearn://mandrews/install-with-installer" },
+        { "module": "outlearn://mandrews/install-with-make" },
+        { "module": "outlearn://mandrews/create-unique-ids" },
+        { "module": "outlearn://mandrews/get-and-delete" },
+        { "module": "outlearn://mandrews/multiple-databases" },
+        { "module": "outlearn://mandrews/pipeline-multiple-commands" },
+        { "module": "outlearn://mandrews/introduction-to-storing-objects" },
+        { "module": "outlearn://mandrews/ruby-library-store-objects" },
+        { "module": "outlearn://mandrews/implement-a-fifo-queue" },
+        { "module": "outlearn://mandrews/implement-a-social-graph" },
+        { "module": "outlearn://mandrews/implement-tags-and-search-them" },
+        { "module": "outlearn://mandrews/pubsub-for-asynchronous-communication" },
+        { "module": "outlearn://mandrews/make-data-more-durable" }
       ]
     }
   ],
