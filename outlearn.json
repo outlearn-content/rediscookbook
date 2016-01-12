@@ -60,18 +60,5 @@
     { "olm": "recipes/4_higher_level_data_structures/implement_tags_and_search_them/recipe.md" },
     { "olm": "recipes/4_higher_level_data_structures/pubsub_for_asynchronous_communication/recipe.md" },
     { "olm": "recipes/5_durability_and_consistency/make_data_more_durable/recipe.md" }
-  ],
-
-  "assets" : [
-    {
-      "name" : "ruby-ohm-code",
-      "contentType" : "code/ruby",
-      "location" : "recipes/3_object_level_interaction/using_a_ruby_library_to_store_objects/ohm.rb"
-    },
-    {
-      "name" : "ruby-remodel-code",
-      "contentType" : "code/ruby",
-      "location" : "recipes/3_object_level_interaction/using_a_ruby_library_to_store_objects/remodel.rb"
-    }
   ]
 }
