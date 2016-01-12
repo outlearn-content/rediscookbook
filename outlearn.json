@@ -8,7 +8,7 @@
       "title" : "The Redis Cookbook",
       "description": "A collection of Redis how-to's, built by the Redis community.",
       "privacy" : "public",
-      "coverImage" : "http://bencane.com/img/thumbnails/redis.png",
+      "coverImage" : "https://scottlinux.com/wp-content/uploads/2014/10/redis-logo.png",
       "pages" : [
         { "module": "outlearn://mandrews/install-with-installer" },
         { "module": "outlearn://mandrews/install-with-make" },
